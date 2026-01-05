@@ -1,0 +1,27 @@
+.sideRow {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+.sideRow:hover {
+    background: rgb(204, 204, 204);
+}
+
+.sideRow img {
+    border-radius: 50px;
+}
+
+.sideRow .channel {
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.sideRow .channel:hover {
+   
+}

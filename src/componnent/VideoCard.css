@@ -1,0 +1,73 @@
+.videoCard {
+    width: 300px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 12px;
+    transition: all ease-in-out 300ms;
+}
+
+.videoCard:hover {
+    background: gainsboro;
+}
+
+.cardVideoContainer {
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.cardVideoContainer video {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.cardContent {
+    margin-top: 6px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.cardContent img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.cardContent>div:nth-child(2) {
+    padding: 6px 12px 0 12px;
+}
+
+.cardContent .title {
+    font-weight: 600;
+    font-size: .9rem;
+    letter-spacing: .2px;
+    line-height: 1.3;
+}
+
+.videoCard .channel {
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgb(15, 15, 15);
+    margin-block: 4px;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.videoCard .channelStatus {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background: url(../assets/correct.png) no-repeat center, rgba(128, 128, 128, .7);
+    background-size: 10px;
+}
+
+.videoCard .info {
+    font-size: .9rem;
+    color: gray;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}

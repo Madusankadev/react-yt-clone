@@ -1,0 +1,153 @@
+.content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sideContainer {
+  width: 17%;
+  /* height: calc(100vh - 80px); */
+  height: 100vh;
+  padding-top: 80px;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.cardContainer {
+  width: 85%;
+  /* height: calc(100vh - 80px); */
+  height: 100vh;
+  padding-top: 80px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: grid;
+  row-gap: 32px;
+  column-gap: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  scroll-behavior: smooth;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.cardContainer {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.headerInputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.videoSearch {
+  max-width: 600px;
+  width: 500px;
+  position: relative;
+}
+
+.videoSearch input {
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 8px 22px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 60px;
+}
+
+.videoSearch input:active {
+  border: 1px solid rgb(59, 59, 59);
+}
+
+.videoSearch input:focus {
+  border: 1px solid rgb(59, 59, 59);
+}
+
+.videoSearch .searchIcon {
+  position: absolute;
+  border-radius: 0 calc(1rem + 20px) calc(1rem + 20px) 0;
+  height: calc(1rem + 20px);
+  width: calc(1rem + 20px);
+  top: 0;
+  right: 0;
+  border: 1px solid gray;
+  background: url(./assets/search.png) no-repeat center, gray;
+  background-size: 20px;
+  padding-inline: 35px;
+}
+
+.header .voiceSearch {
+  width: calc(1rem + 20px);
+  height: calc(1rem + 20px);
+  background: url(./assets/mic.png) no-repeat center, gray;
+  background-size: 24px;
+  border-radius: 35px;
+}
+
+.headerOp {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+
+.createBtn {
+  height: calc(1rem + 20px);
+  font-size: 1rem;
+  font-family: sans-serif;
+  padding-inline: 22px;
+  border-radius: 22px;
+  border: none;
+  background: gray;
+  font-weight: 500;
+  color: #fff;
+}
+
+.notifyBtn {
+  height: calc(1rem + 20px);
+  width: calc(1rem + 20px);
+  background: url(./assets/bell.png) no-repeat center;
+  background-size: 26px;
+  position: relative;
+}
+
+.notifyBtn .notifyCount {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background: red;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  padding: 2px;
+  font-size: .9rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileBtn {
+  height: calc(1rem + 20px);
+  width: calc(1rem + 20px);
+  border-radius: 50px;
+  background: green;
+  font-size: 1.2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
